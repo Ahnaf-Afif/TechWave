@@ -1,15 +1,1 @@
-* {
-  margin: 0;
-  padding: 0;
-}
 
-.inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-#circle {
-  margin-top: 200px;
-}

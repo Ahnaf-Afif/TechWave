@@ -17,36 +17,43 @@
   </head>
   <body class="inter-font">
     <div class="py-6 bg-[#1a0b2e]">
-      <nav class="flex bg-[#1a0b2e] justify-around items-center">
-        <div class="bg-[#ffffff] text-4xl bg-transparent font-bold px-30">
+      <nav
+        class="flex justify-between md:flex-row bg-[#1a0b2e] md:justify-around md:items-center"
+      >
+        <div class="bg-[#ffffff] text-4xl bg-transparent font-bold md:px-30">
           <span class="text-[#ffffff]"> Tech</span
           ><span
-            class="bg-gradient-to-r from-[#7C3AED] to-[#EC4899] bg-clip-text text-transparent"
+            class="bg-gradient-to-r from-[#7C3AED] to-[#EC4899] bg-clip-text text-transparent md:3xs"
             >Wave</span
           >
         </div>
-        <div class="flex justify-around items-center w-3xs">
+        <div class="hidden md:flex justify-around items-center w-3xs">
           <p class="text-[#ffffff] opacity-80">About</p>
           <p class="text-[#ffffff] opacity-80">Episodes</p>
           <p class="text-[#ffffff] opacity-80">Host</p>
         </div>
         <div>
           <button
-            class="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white rounded-full font-medium transition-transform hover:scale-105"
+            class="hidden md:flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white rounded-full font-medium transition-transform hover:scale-105"
           >
             Subscribe
             <img src="assets/Vector.png" alt="arrow" class="w-4 h-4" />
           </button>
         </div>
+        <img
+          src="./assets/hamburger-menu.png"
+          alt=""
+          class="md:hidden max-h-[20px] mt-[12px]"
+        />
       </nav>
     </div>
-    <hr class="text-[dark-blue]" />
+    <hr class="md:border-[dark-blue] md:opacity-30" />
     <section
-      class="w-full h-screen bg-[url('./assets/hero-bg.png')] bg-cover [#1a0b2e]"
+      class="w-full md:w-full md:h-screen bg-[url('./assets/hero-bg.png')] bg-[#1a0b2e]"
     >
       <div class="relative justify-center items-center">
         <div class="flex justify-center">
-          <img src="./assets/hero-circle.png" alt="" class="mt-[6%] w-xs" />
+          <img src="./assets/hero-circle.png" alt="" class="pt-[6%] w-xs" />
         </div>
         <img
           src="./assets/microphone.png"
@@ -64,12 +71,12 @@
           TechWave
         </p>
         <p
-          class="flex justify-center text-[#ffffff] opacity-80 pt-[20px] pb-[20px]"
+          class="text-2xl md:text-base flex justify-center text-[#ffffff] opacity-80 pt-[20px] pb-[20px]"
         >
           Your daily dose of tech insights, productivity hacks, and personal
           growth
         </p>
-        <div class="flex justify-center items-center">
+        <div class="pb-[40px] flex justify-center items-center">
           <div class="mx-2">
             <button
               class="flex justify-center items-center rounded-[1000px] p-[13px] flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white"
@@ -91,23 +98,23 @@
     </section>
 
     <section class="bg-[#1a0b2e]">
-      <div>
+      <div class="mx-6">
         <p
-          class="flex justify-center text-6xl text-[#ffffff] font-bold pb-[20px]"
+          class="flex justify-center text-4xl md:text-6xl text-[#ffffff] font-bold pb-[20px]"
         >
           About the Podcast
         </p>
         <p
-          class="flex justify-center text-[#ffffff] opacity-80 text-center leading-8"
+          class="md:text-base text-xl flex justify-center text-[#ffffff] opacity-80 text-center leading-8"
         >
           TechWave is your go-to podcast for staying ahead in the fast-paced
-          world of technology. <br />
+          world of technology. <br class="hidden md:block" />
           We break down complex topics into digestible insights, explore
           productivity strategies that actually work, <br />
           and share stories of personal growth from industry leaders.
         </p>
         <p
-          class="flex justify-center text-[#ffffff] opacity-80 text-center pt-[30px]"
+          class="text-xl md:text-base justify-center text-[#ffffff] opacity-80 text-center pt-[30px]"
         >
           Join thousands of young professionals and tech enthusiasts who start
           their day with TechWave.
@@ -116,7 +123,9 @@
       <hr
         class="flex justify-center items-center mt-[80px] mb-[80px] mx-30 opacity-10 text-[#ffffff]"
       />
-      <div class="bg-[#1a0b2e] flex justify-around items-center pb-[120px]">
+      <div
+        class="grid grid-rows-2 grid-cols-2 gap-1 bg-[#1a0b2e] md:flex md:justify-around md:items-center pb-[120px]"
+      >
         <div class="text-center">
           <p class="text-[#00FF88] text-4xl font-black">150K+</p>
           <p class="text-[#ffffff] opacity-80 bg-[#1a0b2e]">
@@ -142,16 +151,18 @@
 
     <section class="bg-[#230E3D]">
       <p
-        class="flex justify-center text-6xl text-[#ffffff] font-bold bg-[#230E3D] pt-[120px] pb-[40px]"
+        class="flex justify-center text-4xl md:text-6xl text-[#ffffff] font-bold bg-[#230E3D] pt-[120px] pb-[40px]"
       >
         Why Choose TechWave
       </p>
       <div class="pb-[120px]">
-        <div class="grid grid-cols-3 grid-rows-3 gap-7 mx-40 max-h-[783px]">
+        <div
+          class="grid mx-5 gap-5 grid-cols-1 grid-rows-1 md:grid-cols-3 md:grid-rows-3 md:gap-7 md:mx-40 md:max-h-[783px]"
+        >
           <div
-            class="bg-[#351165] row-span-2 col-span-1 gap-4 rounded-[40px] flex justify-center items-center"
+            class="pl-[70px] md:pl-0 bg-[#351165] py-2 md:row-span-2 md:col-span-1 md:gap-4 rounded-[40px] md:flex justify-center items-center"
           >
-            <div>
+            <div class="">
               <img src="./assets/headphone.png" alt="" />
               <p class="text-[#ffffff] font-[35px] font-bold pt-[16px]">
                 Premium Audio Quality
@@ -207,9 +218,9 @@
             </div>
           </div>
           <div
-            class="bg-[#351165] rounded-[40px] flex justify-center items-center"
+            class="bg-[#351165] pl-[70px] md:pl-0 py-10 rounded-[40px] md:flex justify-center items-center"
           >
-            <div>
+            <div class="grid gap-4">
               <img src="./assets/resource.png" alt="" />
               <p class="text-[#ffffff] font-[35px] font-bold">Rich Resources</p>
               <p class="max-w-[300px] text-[#ffffff] opacity-80">
@@ -224,11 +235,13 @@
 
     <section class="bg-[#1A0B2E]">
       <p
-        class="flex justify-center text-6xl text-[#ffffff] font-bold pt-[120px] pb-[40px] bg-[#1A0B2E]"
+        class="flex justify-center text-4xl md:text-6xl text-[#ffffff] font-bold pt-[120px] pb-[40px] bg-[#1A0B2E]"
       >
         Featured Episodes
       </p>
-      <div class="flex justify-center gap-[30px]">
+      <div
+        class="flex flex-col md:flex-row items-center justify-center gap-[30px]"
+      >
         <div class="max-w-[380px] max-h-[440px] bg-[#250D44] rounded-[30px]">
           <iframe
             class="rounded-t-4xl"
@@ -349,29 +362,37 @@
     <section>
       <div class="bg-[#1A0B2E]">
         <p
-          class="flex justify-center text-6xl text-[#ffffff] font-bold pt-[120px] pb-[40px] bg-[#1A0B2E]"
+          class="flex justify-center text-4xl md:text-6xl text-[#ffffff] font-bold pt-[120px] pb-[40px] bg-[#1A0B2E]"
         >
           Meet the Host
         </p>
-        <div class="flex justify-center pb-[120px]">
+        <div class="flex justify-center gap-7 pb-[120px]">
           <div
-            class="bg-[#351165] flex justify-center items-center max-w-[1200px] rounded-[40px]"
+            class="bg-[#351165] flex flex-col md:flex-row justify-center items-center max-w-400px h-[550px] pb-[90px] md:pb-0 md:max-h-[280px] md:max-w-[1200px] rounded-[40px]"
           >
             <img
               src="./assets/host.png"
               alt=""
-              class="pt-[40px] pl-[40px] pb-[40px] pr-[24px]"
+              class="md:pt-[40px] pl-[40px] md:pb-[40px] pr-[24px]"
             />
             <div class="max-w-[896px] max-h-[183px]">
-              <p class="text-[#ffffff] text-[32px] font-bold">Alex Kumar</p>
-              <p class="text-[#ffffff] pr-[40px] opacity-80">
+              <p
+                class="flex justify-center md:block text-[#ffffff] text-[32px] font-bold py-[30px] md:py-0"
+              >
+                Alex Kumar
+              </p>
+              <p
+                class="text-[#ffffff] md:pr-[40px] opacity-80 pb-[30px] md:pb-0"
+              >
                 Tech entrepreneur, productivity expert, and lifelong learner.
                 Alex has been in the tech industry for over 10 years, working
                 with startups and Fortune 500 companies. Through TechWave, Alex
                 shares insights from industry leaders and practical advice for
                 anyone looking to grow in tech.
               </p>
-              <div class="flex gap-[8px] items-center pt-[16px]">
+              <div
+                class="flex gap-[8px] justify-center md:justify-start items-center pt-[16px]"
+              >
                 <div class="border-2 border-[#533C72] p-[10px] rounded-[50%]">
                   <img src="./assets/linkedin.png" alt="" />
                 </div>
@@ -405,9 +426,9 @@
           </p>
         </div>
         <div
-          class="flex justify-center align-center gap-7 mb-[40px] font-[16px]"
+          class="grid grid-cols-2 grid-rows-2 place-content-center md:flex md:justify-center md:align-center gap-7 mb-[40px] font-[16px]"
         >
-          <div class="flex align-center justify-center gap-3">
+          <div class="flex align-center gap-3">
             <img src="./assets/spotify.png" alt="" class="h-4 w-auto my-1" />
             <p class="text-[#ffffff] opacity-80">Spotify</p>
           </div>
