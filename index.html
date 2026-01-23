@@ -18,7 +18,7 @@
   <body class="inter-font">
     <div class="py-6 bg-[#1a0b2e]">
       <nav
-        class="flex justify-between md:flex-row bg-[#1a0b2e] md:justify-around md:items-center"
+        class="flex justify-around md:flex-row bg-[#1a0b2e] md:justify-around md:items-center"
       >
         <div class="bg-[#ffffff] text-4xl bg-transparent font-bold md:px-30">
           <span class="text-[#ffffff]"> Tech</span
@@ -47,21 +47,25 @@
         />
       </nav>
     </div>
-    <hr class="md:border-[dark-blue] md:opacity-30" />
+    <hr class="border-[dark-blue] opacity-30" />
     <section
-      class="w-full md:w-full md:h-screen bg-[url('./assets/hero-bg.png')] bg-[#1a0b2e]"
+      class="max-w-full h-auto bg-center bg-[length:120%_50%] md:bg-[length:100%_100%] md:max-w-full md:h-screen bg-[url('./assets/hero-bg.png')] bg-[#1a0b2e] bg-cover bg-contain bg-no-repeat"
     >
       <div class="relative justify-center items-center">
         <div class="flex justify-center">
-          <img src="./assets/hero-circle.png" alt="" class="pt-[6%] w-xs" />
+          <img
+            src="./assets/hero-circle.png"
+            alt=""
+            class="w-3xs pt-[14%] md:pt-[6%] md:w-xs"
+          />
         </div>
         <img
           src="./assets/microphone.png"
           alt=""
-          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-[3%]"
+          class="max-w-[70px] md:max-w-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 mt-[7%] md:mt-[3%]"
         />
         <span
-          class="absolute top-4 right-8 bg-[#00FF88] text-black text-s font-bold px-2 py-1 my-25 mx-155 rounded-full"
+          class="absolute top-4 right-8 bg-[#00FF88] text-black text-s font-bold px-2 py-1 md:my-25 my-[15%] mx-[22%] md:mx-155 rounded-full"
         >
           NEW
         </span>
@@ -71,7 +75,7 @@
           TechWave
         </p>
         <p
-          class="text-2xl md:text-base flex justify-center text-[#ffffff] opacity-80 pt-[20px] pb-[20px]"
+          class="text-2xl flex justify-center text-center text-[#ffffff] opacity-80 pt-[20px] pb-[20px] md:text-base"
         >
           Your daily dose of tech insights, productivity hacks, and personal
           growth
@@ -82,7 +86,7 @@
               class="flex justify-center items-center rounded-[1000px] p-[13px] flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-[#F7E93F] via-[#FB09B4] to-[#9100F8] text-white"
             >
               <img src="./assets/spotify.png" alt="" />
-              <p class="pl-[10px]">Listen on Spotify</p>
+              <p class="pl-[10px] text-xl md:text-base">Listen on Spotify</p>
             </button>
           </div>
           <div>
@@ -90,7 +94,9 @@
               class="flex justify-center items-center border-2 border-[#00FF88] rounded-[1000px] px-6 py-3"
             >
               <img src="./assets/message.png" alt="" class="" />
-              <p class="pl-[10px] text-[#00FF88]">Subscribe</p>
+              <p class="pl-[10px] text-[#00FF88] text-xl md:text-base">
+                Subscribe
+              </p>
             </button>
           </div>
         </div>
@@ -368,7 +374,7 @@
         </p>
         <div class="flex justify-center gap-7 pb-[120px]">
           <div
-            class="bg-[#351165] flex flex-col md:flex-row justify-center items-center max-w-400px h-[550px] pb-[90px] md:pb-0 md:max-h-[280px] md:max-w-[1200px] rounded-[40px]"
+            class="bg-[#351165] mx-5 flex flex-col md:flex-row justify-center items-center max-w-400px h-[650px] pb-[90px] md:pb-0 md:max-h-[280px] md:max-w-[1200px] rounded-[40px]"
           >
             <img
               src="./assets/host.png"
@@ -382,13 +388,19 @@
                 Alex Kumar
               </p>
               <p
-                class="text-[#ffffff] md:pr-[40px] opacity-80 pb-[30px] md:pb-0"
+                class="text-[#ffffff] md:block text-center md:text-left mx-8 md:mx-0 md:pr-[40px] opacity-80 pb-[10px] md:pb-0"
               >
-                Tech entrepreneur, productivity expert, and lifelong learner.
-                Alex has been in the tech industry for over 10 years, working
-                with startups and Fortune 500 companies. Through TechWave, Alex
-                shares insights from industry leaders and practical advice for
-                anyone looking to grow in tech.
+                Tech entrepreneur, productivity expert, and
+                <br class="md:hidden" />
+                lifelong learner. Alex has been in the tech
+                <br class="md:hidden" />
+                industry for over 10 years, working with
+                <br class="md:hidden" />
+                startups and Fortune 500 companies.
+                <br class="md:hidden" />Through TechWave, Alex shares insights
+                from industry <br class="md:hidden" />
+                leaders and practical advice for anyone <br class="md:hidden" />
+                looking to grow in tech.
               </p>
               <div
                 class="flex gap-[8px] justify-center md:justify-start items-center pt-[16px]"
@@ -412,8 +424,12 @@
       </div>
     </section>
 
-    <footer class="w-full h-full bg-[url('./assets/footer-bg.png')]">
-      <div class="h-[412px] flex flex-col justify-center items-center">
+    <footer
+      class="md:w-full md:h-full bg-center bg-[length:140%_50%] md:bg-[length:100%_100%] h-screen bg-[#211043] bg-no-repeat bg-[url('./assets/footer-bg.png')] md:bg-[url('./assets/footer-bg.png')]"
+    >
+      <div
+        class="h-[412px] flex flex-col justify-center items-center pt-[90px] md:pt-0"
+      >
         <div>
           <p
             class="text-8xl font-bold text-[#ffffff] flex justify-center items-center text-center mb-[30px]"
